@@ -26,12 +26,10 @@ html {
                          'carrusel  carrusel   carrusel    carrusel'
                          'somos     somos      somos       somos'
                          'aliados   aliados    aliados     aliados'
-                         'servIzq   servIzq    servDer     servDer'
-                         'noticia1  noticia2   novedades1  novedades2'
-                         'contacto  contacto   mapa        mapa'
+                         'unete     unete      crece       crece'
                          'legal     direccion  direccion   redes'
                          'derechos  derechos   derechos    derechos';
-    grid-template-rows: 10% 80% auto auto 40% 40% 40% auto auto;
+    grid-template-rows: 10% 70% auto auto auto auto auto;
 }
 
 /* *Logo*/
@@ -152,8 +150,6 @@ html {
     font-size: 14px;
 }
 
-/*? XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
-
 .body__aliados{
     grid-area: aliados;
     background-color: rgb(255, 255, 255);
@@ -181,49 +177,51 @@ html {
 }
 
 
-
-/*? XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
-
-.servIzq{
-    grid-area: servIzq;
-    background-color: rgb(66, 146, 66);
+.body__unete {
+    grid-area: unete;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
 }
 
-.servDer{
-    grid-area: servDer;
-
-    background-color: rgb(13, 163, 13);
+.body__unete--mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    max-width: 600px; 
 }
 
-.noticia1{
-    grid-area: noticia1;    
-    background-color:rgb(104, 67, 104);
+.body__unete--imagen {
+    width: 30%; 
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.noticia2{
-    grid-area: noticia2;
-    background-color:rgb(102, 41, 102);
+.body__crece {
+    grid-area: crece;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
-.novedad1{
-    grid-area: novedades1;
-    background-color:rgb(130, 100, 148);
+.body__crece--mensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    max-width: 600px; 
 }
 
-.novedad2{
-    grid-area: novedades2;
-    background-color:rgb(103, 41, 139);
+.body__crece--imagen {
+    width: 30%; 
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    
 }
 
-.contacto{
-    grid-area: contacto;
-    background-color: rgb(66, 66, 255);
-}
-
-.mapa{
-    grid-area: mapa;
-    background-color: rgb(115, 115, 255);
-}
 
 .footer__legal {
     grid-area: legal;
@@ -352,15 +350,12 @@ html {
                              'carrusel   carrusel'
                              'somos      somos'
                              'aliados    aliados'
-                             'servIzq    servDer'
-                             'noticia1   noticia2'
-                             'novedades1 novedades2'
-                             'mapa       mapa'
-                             'contacto   contacto'
+                             'unete      unete'
+                             'crece      crece'
                              'legal      direccion  '
                              'redes      redes'
                              'derechos   derechos';
-        grid-template-rows: 10% 5% 45% auto auto 60% 40% 40% 40% 40%  auto auto  auto;
+        grid-template-rows: 10% 5% 45% auto auto auto auto   auto auto  auto;
     }
     .header__logo--img {
         width: 100%; 
@@ -379,7 +374,8 @@ html {
     }
     .separador__titulo{
         font-size: 20px;
-        width: 40%;
+        width: auto;
+        background-color: aquamarine;
     }
     .body__aliados ul li img {
         width: 40px;
@@ -417,7 +413,8 @@ html {
                              'carrusel   carrusel'
                              'somos      somos'
                              'aliados    aliados'
-                             'servIzq    servDer'
+                             'unete      unete'
+                             'crece      crece'
                              'noticia1   noticia2'
                              'novedades1 novedades2'
                              'mapa       mapa'
@@ -425,7 +422,7 @@ html {
                              'legal      direccion  '
                              'redes      redes'
                              'derechos   derechos';
-        grid-template-rows: 10%  45% auto auto 60% 40% 40% 40% 40% auto auto  auto;
+        grid-template-rows: 10%  45% auto auto auto 40% 40% 40% 40% auto auto  auto;
     }
     .header__logo--img {
         width: 100%; 
@@ -440,13 +437,6 @@ html {
     .header__nav ul li a {
         font-size: 20px;
     }
-    .separador__linea{ 
-        width: 25%;
-    }
-    .separador__titulo{
-        font-size: 25px;
-        width: 35%;
-    }
     .body__aliados ul li img {
         width: 40px;
     }
@@ -456,7 +446,14 @@ html {
         font-size: 20px;
         text-align: center;
     }
-    
+    .separador__linea{ 
+        width: 20%;
+    }
+    .separador__titulo{
+        font-size: 20px;
+        width: auto;
+    }
+
     .footer__direcciones--contenedorSucursales {
         width: 90%;
         margin-left: 0;
@@ -477,15 +474,11 @@ html {
                              'carrusel   carrusel'
                              'somos      somos'
                              'aliados    aliados'
-                             'servIzq    servDer'
-                             'noticia1   noticia2'
-                             'novedades1 novedades2'
-                             'mapa       mapa'
-                             'contacto   contacto'
+                             'unete      crece'
                              'legal      direccion  '
                              'redes      redes'
                              'derechos   derechos';
-        grid-template-rows: 10%  70% auto auto 60% 40% 40% 40% 40%  auto auto  auto;
+        grid-template-rows: 10%  70% auto auto auto  auto auto  auto;
     }
     .footer__direcciones h4 {
         font-size: 22px;
@@ -508,6 +501,18 @@ html {
         justify-content: center;
         margin: 0 5px; 
     }
+    .body__contacto .separador{
+        background-color: aquamarine;
+    }
+    .body__contacto .separador .separador__linea{ 
+        width: 30%;
+    }
+    .body_contacto .separador .separador__titulo{
+        font-size: 20px;
+        width: auto;
+        background-color: #131314;
+    }
+
 }
 
 /*  ?media queries para Computadora y monitor grande*/
@@ -518,13 +523,9 @@ html {
                              'somos      somos'
                              'aliados    aliados'
                              'servIzq    servDer'
-                             'noticia1   noticia2'
-                             'novedades1 novedades2'
-                             'mapa       mapa'
-                             'contacto   contacto'
                              'legal      direccion  '
                              'redes      redes'
                              'derechos   derechos';
-        grid-template-rows: 10%  85% auto 15% 60% 40% 40% 40% 40%  20% auto  5%;
+        grid-template-rows: 10%  85% auto 15% 60%  20% auto  5%;
     }
 } */
